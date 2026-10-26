@@ -25,7 +25,7 @@ public class Financiera {
         ArrayList<Bono> salida = new ArrayList<>();
         for (Bono bono : lista) {
             if (filtro.filtrar(bono)) {
-                lista.addAll(bono.filtrar(filtro));
+                salida.addAll(bono.filtrar(filtro));
             }
         }
         return salida;
